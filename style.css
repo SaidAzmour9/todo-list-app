@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    padding: 30px;
+    border: 5px rgba(0, 0, 0, 0.407) solid;
+    width: 80%;
+    border-radius: 15px;
+    min-height: 300px;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgba(45, 83, 117, 0.353);
+}
+.container .input{
+    font-size: large;
+    width: 50%;
+    padding: 10px 15px;
+    border: 1px solid rgba(162, 0, 255, 0.834);
+    border-radius: 5px;
+    outline: none;
+    background-color: #ffffff5a;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    color: #fff;
+    margin: 5px 0;
+}
+hr{
+    margin-bottom: 20px;
+}
+
+.container .add{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    width: 10%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    background-color: #3cdb105a;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+footer p{
+    padding: 30px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+footer p a{
+    color: #ece10d;
+    cursor: pointer;
+    text-decoration: none;
+}
+footer p span{
+    color: red;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(8, 21, 21);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.done{
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 20px;
+    color: #ffffff91;
+    background-color: rgba(8, 21, 21, 0.615);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.del{
+    display: inline-block;
+    background-color: red;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
