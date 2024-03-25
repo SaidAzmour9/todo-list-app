@@ -5,13 +5,16 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(back.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
+    background: rgb(52, 50, 97);
+    background: linear-gradient(90deg,
+     rgba(52, 50, 97,1) 6%,
+     rgba(42, 41, 108,1) 18%,
+     rgba(178, 178, 178,1) 56%,
+     rgba(34, 81, 120,1) 97%,
+     );
     font-family: 'Poppins', sans-serif;
-    background-size: 100vw;
-    height: 100vh;
+    
 }
 .container{
     padding: 30px;
@@ -77,7 +80,7 @@ footer p span{
     font-weight: 800;
 }
 
-.task{
+.task{    
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -88,23 +91,58 @@ footer p span{
     background-color: rgb(8, 21, 21);
     margin-bottom: 10px;
     border-radius: 5px;
+    z-index: 1;
+    font-weight: 500;
 }
-.done{
+
+.tr {
+    cursor: pointer;
+}
+
+.done{    
+    display: flex;
+    justify-content: space-between;
     width: 80%;
     margin: auto;
     text-align: left;
     padding: 10px 20px;
     color: #ffffff91;
-    background-color: rgba(8, 21, 21, 0.615);
+    background-color: rgba(255, 16, 8, 0.515);
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-.del{
+.del{    
     display: inline-block;
     background-color: red;
     padding: 2px 8px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    z-index: 9;
 }
+
+@media screen and (max-width: 768px) {
+    .container .input{
+        width: 90%;
+        display: block;
+        margin: auto;
+       
+    }
+    .container .add{
+        width: 50%;
+        display: block;
+        margin: 20px auto;
+       
+    }
+    .container{
+        padding: 20px 5px;
+        width: 90%;
+        border-radius: 15px;
+        min-height: auto;
+    }
+    .task{    
+        width: 95%;
+        
+    }
+  }
